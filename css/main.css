@@ -1,0 +1,251 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background: #ddd;
+    color: #555;
+    font-size: 16px;
+    line-height: 140%;
+    height: 100%;
+    min-width: 768px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.price {
+    color: #009900;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    background: #565783;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+header > div {
+    line-height: 50px;
+}
+
+header .left {
+    display: inline-block;
+}
+
+header .left select {
+    padding: 2px 5px;
+}
+
+header .right {
+    float: right;
+}
+
+header .right i,
+header .left i {
+    font-size: 20px;
+    color: #fff;
+}
+
+header .right > div {
+    display: inline-block;
+}
+
+header .right .search {
+    margin-right: 20px;
+}
+
+header .right .search input {
+    padding: 5px 10px;
+    line-height: 120%;
+    width: 250px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+header .right .cart {
+    position: relative;
+}
+
+header .right .cart i {
+    padding: 10px;
+}
+
+header .right .cart i:hover {
+    cursor: pointer;
+}
+
+header .right .cart > span {
+    position: absolute;
+    top: 6px;
+    right: -8px;
+    font-size: 11px;
+    background: #ff0000;
+    color: #fff;
+    padding: 1px 4px;
+    line-height: 11px;
+    border-radius: 5px;
+}
+
+header .right .cart .selected-items {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 55px;
+    right: -15px;
+    width: 250px;
+    border: 1px solid #ddd;
+    z-index: 10000;
+}
+
+header .right .cart .selected-items:before {
+    position: absolute;
+    pointer-events: none;
+    border: 9px solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    right: 30px;
+    margin: 0 -9px;
+    border-bottom-color: #fff;
+}
+
+header .right .cart .selected-items .item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+header .right .cart .selected-items .item .left,
+header .right .cart .selected-items .item .right {
+    float: left;
+}
+
+header .right .cart .selected-items .item .left {
+    width: 25%;
+    margin-right: 5%;
+}
+
+header .right .cart .selected-items .item .left img {
+    width: 100%;
+}
+
+header .right .cart .selected-items .item .right {
+    width: 70%;
+}
+
+header .right .cart .selected-items .item .right h4 {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0 5px 0;
+}
+
+header .right .cart .selected-items .item .right p {
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+}
+
+header .right .cart .selected-items .item .clear {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    line-height: 140%;
+}
+
+header .right .cart .selected-items .item .clear i {
+    color: #777;
+    font-size: 18px;
+}
+
+header .right .cart .selected-items .item .clear:hover {
+    cursor: pointer;
+}
+
+header .right .cart .selected-items .item .clear:hover i {
+    color: #555;
+}
+
+header .right .cart .selected-items .total {
+    line-height: 140%;
+    margin-left: 20px;
+}
+
+.products {
+    width: 60%;
+    float: left;
+}
+
+.products .product-item {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.products .product-item .left,
+.products .product-item .right {
+    float: left;
+}
+
+.products .product-item .left {
+    width: 30%;
+    height: 160px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.products .product-item .left img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.products .product-item .right {
+    width: calc(70% - 20px);
+}
+
+.products .product-item .right h3 {
+    margin-top: 0;
+}
+
+.products .product-item button {
+    float: right;
+    background: #565783;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.products .product-item button i {
+    margin-right: 5px;
+}
+
+.products .product-item button:hover {
+    cursor: pointer;
+    background: #344672;
+}
+
+.sidebar {
+    width: 40%;
+    padding: 0;
+    position: fixed;
+    left: 60%;
+    background: #fff;
+    height: 100vh;
+}
+
+.sidebar #map {
+    height: 100%;
+    width: 100%;
+}
+
